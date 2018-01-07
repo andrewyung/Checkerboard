@@ -465,7 +465,7 @@ int BoardBuilder::initBoard(int gridWidth, void (*gameLoopCallback)(), void(*inp
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
 
-	//second VBO
+	//second VAO, gen for later
 	glGenVertexArrays(1, &pieceVAO);
 	glGenBuffers(1, &pieceVBO);
 	glGenBuffers(1, &pieceEBO);
